@@ -26,11 +26,6 @@
 % command above and make sure to compile with pdflatex several times 
 % afterwards to propagate your changes to the document.
 %
-% This template also uses a number of packages which may need to be
-% updated to the newest versions for the template to compile. It is strongly
-% recommended you update your LaTeX distribution if you have any
-% compilation errors.
-%
 % Important note:
 % Chapter heading images should have a 2:1 width:height ratio,
 % e.g. 920px width and 460px height.
@@ -96,7 +91,7 @@
 
 \noindent Latex template ``The Legrand Orange Book'' by Mathias Legrand and Vel \\
 
-\noindent \textit{Draft, July 2016} % Printing/edition date
+\noindent \textit{Draft, October 2016} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
 %	PREFACE
@@ -109,11 +104,11 @@ Dear Reader,
 
 \paragraph{}
 
-The purpose of this book is introduce a standards-oriented approach for the implementation of nanosatellite projects, in particular for CubeSat projects.  
+The purpose of this book is introduce a standards-oriented approach for the implementation of CubeSat projects.  
 
 \paragraph{}
 
-This book is divided into two parts. The first part is dedicated to the definition of the processes to be executed throughout the entire project lifetime. It covers the domains of project management, product assurance, system engineering, and mission operations. The second part is concerned with the recommendation of standards related to system design. This includes reference architectures, interface protocols, and data exchange formats for all segments of a typical space system. 
+This book contains two main parts. The first part is about the processes to be executed throughout the entire project lifetime. It covers the domains of project management, product assurance, system engineering, and mission operations. The second part is concerned with the recommendation of standards related to system design. This includes reference architectures, interface protocols, and data exchange formats for all segments of a typical space system. 
 
 \paragraph{}
 
@@ -125,11 +120,14 @@ Artur Scholz
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\newpage
+%\newpage
 %\chapterimage{chapter_head_dummy.pdf} % Chapter heading image
 \section*{Acknowledgements}
 
-TO BE WRITTEN
+The following people provided valuable contributions to the creating of this book (in alphabetical order):
+César Coelho, Otávio Durão, Daniel Hernandez, ...
+
+
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -156,6 +154,7 @@ TO BE WRITTEN
 \include{tex/introduction}
 
 \part{Processes}
+\label{part:processes}
 
 \chapterimage{chapter_head_01} % Chapter heading image
 \include{tex/project_management}
@@ -180,8 +179,16 @@ TO BE WRITTEN
 \chapterimage{chapter_head_01} % Chapter heading image
 \include{tex/ground_segment}
 
+
+%\part{Regulations}
+
 %\chapterimage{chapter_head_01} % Chapter heading image
 %\include{tex/launch_segment}
+
+\part{Appendix}
+
+\chapterimage{chapter_head_01} % Chapter heading image
+\include{tex/templates}
 
 \chapterimage{chapter_head_01} % Chapter heading image
 \include{tex/annex}

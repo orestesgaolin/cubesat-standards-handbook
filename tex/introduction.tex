@@ -93,10 +93,10 @@ A number of organizations exist that are concerned with the development of inter
 This book is concerned with the mapping of available international space standards to the various aspects of developing and running a CubeSat mission. The selection criteria for standards organizations were based on the following:
 
 \begin{itemize}
-\item Open: Standards shall be openly available to anybody, preferable through the internet.
+\item Open: Standards shall be openly available to anyone, preferable through the internet.
 \item Free: Standards shall be free of charge and fees.
-\item International: Standards shall be written with international collaboration in mind.
-\item Recent: Standards shall be implementable with state-of-the-art components.
+\item International: Standards shall be available in English and address not national interests but an international audience.
+\item Up-to-date: Standards shall be implementable with state-of-the-art components.
 \end{itemize}
 
 The organizations found to comply well with these criteria are introduced briefly in the following sections.
@@ -122,3 +122,13 @@ The goal of ECSS is to develop a common set of consistent standards for hardware
 The \textbf{Object Management Group (OMG)} \cite{omg.org} is an international, open membership, not-for-profit technology standards consortium. OMG Task Forces develop enterprise integration standards for a wide range of technologies and industries. including space industry. OMG modeling standards enable visual design, execution and maintenance of software and other processes. 
 
 The \textbf{Organization for the Advancement of Structured Information Standards (OASIS)} \cite{oasis.org} is a global non-profit consortium that works on the development, convergence, and adoption of standards for security, energy, content technologies, emergency management, and other areas.
+
+\section{How To Use This Book}
+
+This book was written with the goal to improve the overall reliability of CubeSats (in particular from academia and research) and to increase the level of cooperation among CubeSat developers. The application of standards and the mindset of open source software and hardware are the two pillars upon which these goals can be achieved.
+
+This book however does not prescribe in any way what CubeSat developers have to do or which standards shall be required for their project. The book is only a review of existing space standards (mostly from ECSS and CCSDS) and their potential application within CubeSat projects. It is be up to the CubeSat developer team (or the top level customer) to decide which of those standards are selected as binding.
+
+Nonetheless, the recommended approach for CubeSat developers is to follow the development process in a way that is similar to the one outlined in the first part of the book, and to produce \textbf{all} documents listed as deliverables in Section \ref{sec:Project Management Deliverables}, Section \ref{sec:Product Assurance Deliverables}, Section \ref{sec:Engineering Deliverables}, and Section \ref{sec:Mission Operations Deliverables}. Although this may appear as an overwhelming task at first that requires a lot of paperwork, it lays in fact the foundation of a project. It is up to the project team to decide how much effort they put into each of these documents, but it will give a guiding structure to all project related activities and for all the people involved. Last but not least, following this document layout will help in understanding and navigating through other CubeSat projects much quicker.
+
+The second part of the book then presents a large number of standards that are related to system technology and communications protocols. They are categorized into domains of potential application. For example, for onboard communication, the ECSS-CAN bus standard is presented, as it is a standardized space communication bus that is suitable and feasible for implementation in CubeSats. Note however that this part of the book is \textbf{not} a review of technology used on CubeSats or a recipe on how to build a CubeSat. It is rather to show what standards are available that can be possibly used in a CubeSat mission. Most of those standards are concerned with data exchange protocols and interface standardization.
