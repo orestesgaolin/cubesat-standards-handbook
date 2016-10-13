@@ -9,7 +9,7 @@ The ground segment comprises those elements of the space mission that are used t
 For everything related to the space link (i.e. that radio communications path between ground and space segment), the standards presented in section \ref{sec:Space Link} apply.
 
 \begin{tabular}{l}
-\textit{"Ground Equipment Monitoring Service (GEMS)" \cite{XXXXX}} \\
+\textit{"Ground Equipment Monitoring Service (GEMS)" \cite{GEMS}} \\
 \end{tabular}
 
 The GEMS specification defines a standard, platform independent model (PIM) for controlling a wide range of devices used as ground station equipment. The GEMS model does not presume or try to define a specific system level architecture. Instead, it defines generic concepts such as devices, parameters, and directives that are relatively simple to implement and provide system integrators common ways to control heterogeneous suites of space related ground equipment. The central concept of GEMS is the GEMS device. GEMS devices have typed parameters, accept directives with typed arguments, and can optionally save and restore their configuration using persistent storage. Users utilize the GEMS interface within the device to configure and obtain status.
@@ -28,7 +28,7 @@ The space link extension (SLE) services extend the return telemetry (TM) and for
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.5]{fig/domains_of_space_link_and_space_link_extension_services}
-\caption{Domain of Space Link and Space Link Extension Services}
+\caption{Domain of Space Link and Space Link Extension Services (CCSDS)}
 \label{fig:Domain of Space Link and Space Link Extension Services}
 \end{figure}
 
@@ -50,15 +50,15 @@ The adherence to SLE standards makes it possible to implement cross support amon
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.5]{fig/multiple_limited_capability_ground_stations}
-\caption{Multiple Limited Capability Ground Stations}
+\caption{Multiple Limited Capability Ground Stations (CCSDS)}
 \label{fig:Multiple Limited Capability Ground Stations}
 \end{figure}
 
 \subsection{SLE Service Management}
 
 \begin{tabular}{l}
-\textit{CCSDS 910.14-G "Space Communication Cross Support — Service Management — Operations Concept" \cite{CCSDS-910.14-G}} \\
-\textit{CCSDS 910.11-B "Space Communication Cross Support — Service Management — Service Specification" \cite{CCSDS-910.11-B}} \\
+\textit{CCSDS 910.14-G "Space Communication Cross Support — Service Manag. — Operations Concept" \cite{CCSDS-910.14-G}} \\
+\textit{CCSDS 910.11-B "Space Communication Cross Support — Service Manag. — Service Specification" \cite{CCSDS-910.11-B}} \\
 \end{tabular}
 
 Although the SLE data transfer services can be implemented with an ad-hoc (user agreed) service management, adhering to the SLE service management standard provides a formal and clear definition of services for negotiation, configuration, and execution of space link services, and thus allows for maximum of automation of this tasks. 
@@ -74,7 +74,7 @@ The service management functions are implemented by the utilization management (
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.3]{fig/service_management_environment}
-\caption{Service Management Environment}
+\caption{Service Management Environment (CCSDS)}
 \label{fig:Service Management Environment}
 \end{figure}
 
@@ -108,7 +108,7 @@ The return SLE services (shown in Figure \ref{fig:Return SLE Services}) include:
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.3]{fig/return_sle_services}
-\caption{Return SLE Services}
+\caption{Return SLE Services (CCSDS)}
 \label{fig:Return SLE Services}
 \end{figure}
 
@@ -130,7 +130,7 @@ The forward SLE services (shown in Figure \ref{fig:Forward SLE Services}) includ
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.4]{fig/forward_sle_services}
-\caption{Forward SLE Services}
+\caption{Forward SLE Services (CCSDS)}
 \label{fig:Forward SLE Services}
 \end{figure}
 
@@ -159,9 +159,9 @@ This standard defines a service that allows a spaceflight mission to receive per
 \subsection{API for Transfer Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 914.1-G "Space Link Extension — Application Program Interface for Transfer Services — Summary of Concept and Rationale" \cite{CCSDS-914.1-G}} \\
-\textit{CCSDS 914.0-M "Space Link Extension — Application Program Interface for Transfer Services — Core Specification" \cite{CCSDS-914.0-M}} \\
-\textit{CCSDS 914.2-G "Space Link Extension — Application Program Interface for Transfer Services — Application Programmer's Guide" \cite{CCSDS-914.2-G}} \\
+\textit{CCSDS 914.1-G "SLE — API for Transfer Services — Summary of Concept and Rationale" \cite{CCSDS-914.1-G}} \\
+\textit{CCSDS 914.0-M "SLE — API for Transfer Services — Core Specification" \cite{CCSDS-914.0-M}} \\
+\textit{CCSDS 914.2-G "SLE — API for Transfer Services — Application Programmer's Guide" \cite{CCSDS-914.2-G}} \\
 \end{tabular}
 
 The SLE API provides a high level, communication technology independent interface for exchange of SLE operation invocations and returns between a SLE service user and a SLE service provider. 
@@ -170,7 +170,7 @@ The SLE API for transfer services consists of two distinct layers, API proxy and
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.5]{fig/layers_of_the_sle_api}
-\caption{Layers of the SLE API}
+\caption{Layers of the SLE API (CCSDS)}
 \label{fig:Layers of the SLE API}
 \end{figure}
 
@@ -179,9 +179,9 @@ The API proxy represents the technology abstraction layer.
 \subsubsection{API for Return SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 915.1-M "Space Link Extension — Application Program Interface for Return All Frames Service" \cite{CCSDS-915.1-M}} \\
-\textit{CCSDS 915.2-M "Space Link Extension — Application Program Interface for Return Channel Frames Service" \cite{CCSDS-915.2-M}} \\
-\textit{CCSDS 915.5-M "Space Link Extension — Application Program Interface for Return Operational Control Fields" \cite{CCSDS-915.5-M}} \\
+\textit{CCSDS 915.1-M "Space Link Extension — API for Return All Frames Service" \cite{CCSDS-915.1-M}} \\
+\textit{CCSDS 915.2-M "Space Link Extension — API for Return Channel Frames Service" \cite{CCSDS-915.2-M}} \\
+\textit{CCSDS 915.5-M "Space Link Extension — API for Return Operational Control Fields" \cite{CCSDS-915.5-M}} \\
 \end{tabular}
 
 These standards define C++ application program interfaces (APIs) for the specified return SLE services.
@@ -189,8 +189,8 @@ These standards define C++ application program interfaces (APIs) for the specifi
 \subsubsection{API for Forward SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 916.1-M "Space Link Extension — Application Program Interface for the Forward CLTU Service" \cite{CCSDS-916.1-M}} \\
-\textit{CCSDS 916.3-M "Space Link Extension — Application Program Interface for the Forward Space Packet Service" \cite{CCSDS-916.3-M}} \\
+\textit{CCSDS 916.1-M "Space Link Extension — API for the Forward CLTU Service" \cite{CCSDS-916.1-M}} \\
+\textit{CCSDS 916.3-M "Space Link Extension — API for the Forward Space Packet Service" \cite{CCSDS-916.3-M}} \\
 \end{tabular}
 
 These standards define C++ application program interfaces (APIs) for the specified forward SLE services.
@@ -212,7 +212,7 @@ This standard defines a protocol for transfer of SLE protocol data units (PDUs) 
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.4]{fig/isp1_architectural_model}
-\caption{ISP1 Architectural Model}
+\caption{ISP1 Architectural Model (CCSDS)}
 \label{fig:ISP1 Architectural Model}
 \end{figure}
 
@@ -244,7 +244,7 @@ A product consists of hardware component, software component, or both, together 
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/example_product_delivery_system_element_hierarchy}
-\caption{Example Product Delivery System Element Hierarchy}
+\caption{Example Product Delivery System Element Hierarchy (ECSS)}
 \label{fig:Example Product Delivery System Element Hierarchy}
 \end{figure}
 
@@ -295,7 +295,7 @@ A PLUTO procedure comprises the following elements (Figure \ref{fig:Example of P
 
  \begin{figure}[h]
 \centering\includegraphics[scale=0.45]{fig/example_of_pluto_procedure}
-\caption{Example of PLUTO Procedure}
+\caption{Example of PLUTO Procedure (ECSS)}
 \label{fig:Example of PLUTO Procedure}
 \end{figure}
 
@@ -329,7 +329,7 @@ Within the OAIS entity, five functional units are identified (shown in Figure \r
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/oais_functional_entities}
-\caption{OAIS Functional Entities}
+\caption{OAIS Functional Entities (CCSDS)}
 \label{fig:OAIS Functional Entities}
 \end{figure}
 
@@ -354,7 +354,7 @@ A widely used format for exchange of orbit data are the so-called two-line eleme
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/example_of_tle}
 \caption{Example of Two Line Element Set (TLE)}
-\label{fig:Example of Two Line Element Set (TLE)}
+\label{fig:Example of Two Line Element Set}
 \end{figure}
 
 Although TLEs are the most common format in which satellite orbit data may be received (for example, via NORAD or CelesTrak), it is recommended to instead use the CCSDS OMM format (as introduced in the following) when generating or further distributing such information. One reason for this is that while TLE inherently uses SGP4 models for most earth orbiting satellites, the OMM format allows for explicit definition of which propagation algorithm to use.
@@ -380,7 +380,7 @@ This standard specifies message formats for use in transferring spacecraft orbit
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/example_of_omm}
 \caption{Example of Orbit Mean-Elements Message (OMM)}
-\label{fig:Example of Orbit Mean-Elements Message (OMM)}
+\label{fig:Example of Orbit Mean-Elements Message}
 \end{figure}
 
 \begin{tabular}{l}
@@ -430,7 +430,7 @@ A simulator is composed of all or a subset of the components shown in Figure \re
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.45]{fig/simulator_components}
-\caption{Simulator Components}
+\caption{Simulator Components (ECSS)}
 \label{fig:Simulator Components}
 \end{figure}
 
@@ -444,7 +444,7 @@ To ease portability and allow reuse of simulation models, the simulation modelli
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/smp_overview}
-\caption{SMP Overview}
+\caption{SMP Overview (ECSS)}
 \label{fig:SMP Overview}
 \end{figure}
 
@@ -452,6 +452,6 @@ The SMP defines a generic pattern for component models, including a set of manda
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.3]{fig/smp_architecture}
-\caption{SMP Architecture}
+\caption{SMP Architecture (ECSS)}
 \label{fig:SMP Architecture}
 \end{figure}
