@@ -19,9 +19,9 @@ The specification defines a simple ASCII message protocol usable across a variet
 \section{Ground Communications System}
 
 \begin{tabular}{l}
-\textit{CCSDS 910.0-G "Space Link Extension Services - Executive Summary" \cite{CCSDS-910.0-G}} \\
-\textit{CCSDS 910.3-G "Cross Support Concept — Part 1:  Space Link Extension" \cite{CCSDS-910.3-G}} \\
-\textit{CCSDS 910.4-B "Cross Support Reference Model—Part 1: Space Link Extension Services" \cite{CCSDS-910.4-B}} \\
+\textit{CCSDS-910.0-G "Space Link Extension Services - Executive Summary" \cite{CCSDS-910.0-G}} \\
+\textit{CCSDS-910.3-G "Cross Support Concept — Part 1:  Space Link Extension" \cite{CCSDS-910.3-G}} \\
+\textit{CCSDS-910.4-B "Cross Support Reference Model—Part 1: Space Link Extension Services" \cite{CCSDS-910.4-B}} \\
 \end{tabular}
 
 The space link extension (SLE) services extend the return telemetry (TM) and forward telecommand (TC) space link services (see \ref{sec:Space Link} and \ref{fig:Domain of Space Link and Space Link Extension Services}) in terms of: over (ground) distance, in time, and/or by adding information.
@@ -57,8 +57,8 @@ The adherence to SLE standards makes it possible to implement cross support amon
 \subsection{SLE Service Management}
 
 \begin{tabular}{l}
-\textit{CCSDS 910.14-G "Space Communication Cross Support — Service Manag. — Operations Concept" \cite{CCSDS-910.14-G}} \\
-\textit{CCSDS 910.11-B "Space Communication Cross Support — Service Manag. — Service Specification" \cite{CCSDS-910.11-B}} \\
+\textit{CCSDS-910.14-G "Space Communication Cross Support — Service Manag. — Operations Concept" \cite{CCSDS-910.14-G}} \\
+\textit{CCSDS-910.11-B "Space Communication Cross Support — Service Manag. — Service Specification" \cite{CCSDS-910.11-B}} \\
 \end{tabular}
 
 Although the SLE data transfer services can be implemented with an ad-hoc (user agreed) service management, adhering to the SLE service management standard provides a formal and clear definition of services for negotiation, configuration, and execution of space link services, and thus allows for maximum of automation of this tasks. 
@@ -91,9 +91,9 @@ The SLE transfer services are a suite of services that are used to transfer spec
 \subsubsection{Return SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 911.1-B "Space Link Extension — Return All Frames Service Specification" \cite{CCSDS-911.1-B}} \\
-\textit{CCSDS 911.2-B "Space Link Extension — Return Channel Frames Service Specification" \cite{CCSDS-911.2-B}} \\
-\textit{CCSDS 911.5-B "Space Link Extension — Return Operational Control Fields Service Specification" \cite{CCSDS-911.5-B}} \\
+\textit{CCSDS-911.1-B "Space Link Extension — Return All Frames Service Specification" \cite{CCSDS-911.1-B}} \\
+\textit{CCSDS-911.2-B "Space Link Extension — Return Channel Frames Service Specification" \cite{CCSDS-911.2-B}} \\
+\textit{CCSDS-911.5-B "Space Link Extension — Return Operational Control Fields Service Specification" \cite{CCSDS-911.5-B}} \\
 \end{tabular}
 
 The return SLE services (shown in Figure \ref{fig:Return SLE Services}) include: 
@@ -115,8 +115,8 @@ The return SLE services (shown in Figure \ref{fig:Return SLE Services}) include:
 \subsubsection{Forward SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 912.1-B "Space Link Extension — Forward CLTU Service Specification" \cite{CCSDS-912.1-B}} \\
-\textit{CCSDS 912.3-B "Space Link Extension — Forward Space Packet Service Specification" \cite{CCSDS-912.3-B}} \\
+\textit{CCSDS-912.1-B "Space Link Extension — Forward CLTU Service Specification" \cite{CCSDS-912.1-B}} \\
+\textit{CCSDS-912.3-B "Space Link Extension — Forward Space Packet Service Specification" \cite{CCSDS-912.3-B}} \\
 \end{tabular}
 
 The forward SLE services (shown in Figure \ref{fig:Forward SLE Services}) include: 
@@ -139,19 +139,19 @@ Note that as shown in Figure \ref{fig:Forward SLE Services} the ROCF service is 
 \subsection{Cross Support Transfer Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 921.1-R "Cross Support Transfer Service - Specification Framework" \cite{CCSDS-921.1-R}} \\
+\textit{CCSDS-921.1-R "Cross Support Transfer Service - Specification Framework" \cite{CCSDS-921.1-R}} \\
 \end{tabular}
 
 Cross support transfer services (CSTSes) provide for reliable, access-controlled transfer of spaceflight mission related data between ground element entities. A cross support service is characterized by the kind of data it transfers (e.g., telemetry data,  tracking data, service production monitoring data), and therefore different CSTSes need  to respond to specific requirements that may demand specific solutions. On the other hand, all CSTSes defined by CCSDS  apply the same basic communications patterns in order  to simplify specification, implementation, and operation of these services.  
 
 \begin{tabular}{l}
-\textit{CCSDS 922.1-R "Cross Support Transfer Service - Monitored Data Service" \cite{CCSDS-922.1-R}} \\
+\textit{CCSDS-922.1-R "Cross Support Transfer Service - Monitored Data Service" \cite{CCSDS-922.1-R}} \\
 \end{tabular}
 
 This standard defines a service, which allows a spaceflight mission to receive cyclic reports on, and to query the current values of, the parameters that are pertinent to cross support services being provided by a cross support complex. The service also allows a spaceflight mission to receive notifications of the occurrence of events of interest associated with the services that are being provided by the complex.
 
 \begin{tabular}{l}
-\textit{CCSDS 922.2-R "Cross Support Transfer Service - Tracking Data Cross support Transfer Service" \cite{CCSDS-922.2-R}} \\
+\textit{CCSDS-922.2-R "Cross Support Transfer Service - Tracking Data Cross support Transfer Service" \cite{CCSDS-922.2-R}} \\
 \end{tabular}
 
 This standard defines a service that allows a spaceflight mission to receive periodic measurements of tracking data as soon as they are generated by a cross support complex or anytime thereafter. The service delivers the tracking data formatted in accordance with the CCSDS Tracking Data Message Recommended Standard (TDM).
@@ -159,9 +159,9 @@ This standard defines a service that allows a spaceflight mission to receive per
 \subsection{API for Transfer Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 914.1-G "SLE — API for Transfer Services — Summary of Concept and Rationale" \cite{CCSDS-914.1-G}} \\
-\textit{CCSDS 914.0-M "SLE — API for Transfer Services — Core Specification" \cite{CCSDS-914.0-M}} \\
-\textit{CCSDS 914.2-G "SLE — API for Transfer Services — Application Programmer's Guide" \cite{CCSDS-914.2-G}} \\
+\textit{CCSDS-914.1-G "SLE — API for Transfer Services — Summary of Concept and Rationale" \cite{CCSDS-914.1-G}} \\
+\textit{CCSDS-914.0-M "SLE — API for Transfer Services — Core Specification" \cite{CCSDS-914.0-M}} \\
+\textit{CCSDS-914.2-G "SLE — API for Transfer Services — Application Programmer's Guide" \cite{CCSDS-914.2-G}} \\
 \end{tabular}
 
 The SLE API provides a high level, communication technology independent interface for exchange of SLE operation invocations and returns between a SLE service user and a SLE service provider. 
@@ -179,9 +179,9 @@ The API proxy represents the technology abstraction layer.
 \subsubsection{API for Return SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 915.1-M "Space Link Extension — API for Return All Frames Service" \cite{CCSDS-915.1-M}} \\
-\textit{CCSDS 915.2-M "Space Link Extension — API for Return Channel Frames Service" \cite{CCSDS-915.2-M}} \\
-\textit{CCSDS 915.5-M "Space Link Extension — API for Return Operational Control Fields" \cite{CCSDS-915.5-M}} \\
+\textit{CCSDS-915.1-M "Space Link Extension — API for Return All Frames Service" \cite{CCSDS-915.1-M}} \\
+\textit{CCSDS-915.2-M "Space Link Extension — API for Return Channel Frames Service" \cite{CCSDS-915.2-M}} \\
+\textit{CCSDS-915.5-M "Space Link Extension — API for Return Operational Control Fields" \cite{CCSDS-915.5-M}} \\
 \end{tabular}
 
 These standards define C++ application program interfaces (APIs) for the specified return SLE services.
@@ -189,8 +189,8 @@ These standards define C++ application program interfaces (APIs) for the specifi
 \subsubsection{API for Forward SLE Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 916.1-M "Space Link Extension — API for the Forward CLTU Service" \cite{CCSDS-916.1-M}} \\
-\textit{CCSDS 916.3-M "Space Link Extension — API for the Forward Space Packet Service" \cite{CCSDS-916.3-M}} \\
+\textit{CCSDS-916.1-M "Space Link Extension — API for the Forward CLTU Service" \cite{CCSDS-916.1-M}} \\
+\textit{CCSDS-916.3-M "Space Link Extension — API for the Forward Space Packet Service" \cite{CCSDS-916.3-M}} \\
 \end{tabular}
 
 These standards define C++ application program interfaces (APIs) for the specified forward SLE services.
@@ -198,7 +198,7 @@ These standards define C++ application program interfaces (APIs) for the specifi
 \subsubsection{Internet Protocol for Transfer Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 913.1-B "Space Link Extension — Internet Protocol for Transfer Services" \cite{CCSDS-913.1-B}} \\
+\textit{CCSDS-913.1-B "Space Link Extension — Internet Protocol for Transfer Services" \cite{CCSDS-913.1-B}} \\
 \end{tabular}
 
 This standard defines a protocol for transfer of SLE protocol data units (PDUs) using the internet protocols TCP (transmission control protocol) and IP (internet protocol), named internet SLE protocol one (ISP1). It is a layered protocol as shown in Figure \ref{fig:ISP1 Architectural Model}, where the:
@@ -225,9 +225,9 @@ For everything related to the application layer functionality of the spacecraft 
 \subsubsection{Mission Information Base}
 
 \begin{tabular}{l}
-\textit{CCSDS 660.0-B "XML Telemetric and Command Exchange (XTCE)" \cite{CCSDS-660.0-B}} \\
-\textit{CCSDS 660.0-G "XML Telemetric and Command Exchange (XTCE)" \cite{CCSDS-660.0-G}} \\
-\textit{CCSDS 660.1-G "XML Telemetric and Command Exchange (XTCE) - Element Description" \cite{CCSDS-660.1-G}} \\
+\textit{CCSDS-660.0-B "XML Telemetric and Command Exchange (XTCE)" \cite{CCSDS-660.0-B}} \\
+\textit{CCSDS-660.0-G "XML Telemetric and Command Exchange (XTCE)" \cite{CCSDS-660.0-G}} \\
+\textit{CCSDS-660.1-G "XML Telemetric and Command Exchange (XTCE) - Element Description" \cite{CCSDS-660.1-G}} \\
 \end{tabular}
 
 XTCE is a solution to specify and exchange telemetry and telecommand databases in an open, non-proprietary way using XML. The main concept behind XTCE is that of a hierarchy of information. Hence XTCE can be applied to any part of the spacecraft (such as instruments), the spacecraft itself, or the entire space or ground segment. Typically, individual databases would be created for each payload and for the spacecraft platform itself, which then can be integrated into one large database. 
@@ -302,7 +302,7 @@ A PLUTO procedure comprises the following elements (Figure \ref{fig:Example of P
 \subsubsection{Mission Planning}
 
 \begin{tabular}{l}
-\textit{CCSDS 902.1-R "Simple Schedule Format Specification" \cite{CCSDS 902.1-R}} \\
+\textit{CCSDS-902.1-R "Simple Schedule Format Specification" \cite{CCSDS-902.1-R}} \\
 \end{tabular}
 
 This standard specifies a standard format for use in transferring scheduling information related to ground stations and/or relay satellites between spacecraft operators. The schedule is an XML file that contains information about the times that one or more ground stations have been booked for tracking one or more satellites.
@@ -310,15 +310,15 @@ This standard specifies a standard format for use in transferring scheduling inf
 \subsubsection{Data Archival and Dissemination System}
 
 \begin{tabular}{l}
-\textit{CCSDS 661.0-B "XML Formatted Data Unit (XFDU) Structure and Construction Rules" \cite{CCSDS 661.0-B}} \\
+\textit{CCSDS-661.0-B "XML Formatted Data Unit (XFDU) Structure and Construction Rules" \cite{CCSDS-661.0-B}} \\
 \end{tabular}
 
 This standard defines a technique for the packaging of data and metadata, including software, into a single package (e.g., file or message) to facilitate information transfer and archiving. It provides a detailed specification of core packaging structures and mechanisms to accommodate the current computing environment and meet evolving requirements by making the packaging manifest an XML document defined by the XML Schema specified in the document.
 
 \begin{tabular}{l}
-\textit{CCSDS 650.0-M "Reference Model for an Open Archival Information System (OAIS)" \cite{CCSDS 650.0-M}} \\
-\textit{CCSDS 651.0-M "Producer-Archive Interface Methodology Abstract Standard" \cite{CCSDS 651.0-M}} \\
-\textit{CCSDS 651.1-B "Producer-Archive Interface Specification (PAIS)" \cite{CCSDS 651.1-B}} \\
+\textit{CCSDS-650.0-M "Reference Model for an Open Archival Information System (OAIS)" \cite{CCSDS-650.0-M}} \\
+\textit{CCSDS-651.0-M "Producer-Archive Interface Methodology Abstract Standard" \cite{CCSDS-651.0-M}} \\
+\textit{CCSDS-651.1-B "Producer-Archive Interface Specification (PAIS)" \cite{CCSDS-651.1-B}} \\
 \end{tabular}
 
 The Open Archival Information System (OAIS) is a reference model rather than an implementation plan for a long term digital archive. As a conceptual framework for a complete, generic archival system, OAIS's strength is in establishing common terms and concepts for describing repository architectures and comparing implementations — without specifying an implementation an organization should use. 
@@ -360,13 +360,13 @@ A widely used format for exchange of orbit data are the so-called two-line eleme
 Although TLEs are the most common format in which satellite orbit data may be received (for example, via NORAD or CelesTrak), it is recommended to instead use the CCSDS OMM format (as introduced in the following) when generating or further distributing such information. One reason for this is that while TLE inherently uses SGP4 models for most earth orbiting satellites, the OMM format allows for explicit definition of which propagation algorithm to use.
 
 \begin{tabular}{l}
-\textit{CCSDS 500.0-G "Navigation Data — Definitions and Conventions" \cite{CCSDS 500.0-G}} \\
+\textit{CCSDS-500.0-G "Navigation Data — Definitions and Conventions" \cite{CCSDS-500.0-G}} \\
 \end{tabular}
 
 This report contains technical material to supplement the following standards for spacecraft navigation data. The topics covered include radiometric data content, spacecraft ephemeris, planetary ephemeris, tracking station locations, coordinate systems, and attitude data. 
 
 \begin{tabular}{l}
-\textit{CCSDS 502.0-B "Orbit Data Messages" \cite{CCSDS 502.0-B}} \\
+\textit{CCSDS-502.0-B "Orbit Data Messages" \cite{CCSDS-502.0-B}} \\
 \end{tabular}
 
 This standard specifies message formats for use in transferring spacecraft orbit information. Namely it defines three different orbit data message formats:
@@ -384,13 +384,13 @@ This standard specifies message formats for use in transferring spacecraft orbit
 \end{figure}
 
 \begin{tabular}{l}
-\textit{CCSDS 503.0-B "Tracking Data Message" \cite{CCSDS 503.0-B}} \\
+\textit{CCSDS-503.0-B "Tracking Data Message" \cite{CCSDS-503.0-B}} \\
 \end{tabular}
 
 This standard specifies a message format for use in exchanging of spacecraft tracking data, that is data pertinent to a ground station tracking a satellite. Tracking data includes data types such as Doppler, transmit/receive frequencies, range, ground antenna pointing angles, weather (at station), etc. The message format is suitable for automated interaction.
 
 \begin{tabular}{l}
-\textit{CCSDS 504.0-B "Attitude Data Message" \cite{CCSDS 504.0-B}} \\
+\textit{CCSDS-504.0-B "Attitude Data Message" \cite{CCSDS-504.0-B}} \\
 \end{tabular}
 
 This standard specifies message formats for use in transferring spacecraft orbit information. Namely it defines two different attitude data message formats:
@@ -401,19 +401,19 @@ This standard specifies message formats for use in transferring spacecraft orbit
 \end{itemize}
 
 \begin{tabular}{l}
-\textit{CCSDS 505.0-B "XML Specification for Navigation Data Messages" \cite{CCSDS 505.0-B}} \\
+\textit{CCSDS-505.0-B "XML Specification for Navigation Data Messages" \cite{CCSDS-505.0-B}} \\
 \end{tabular}
 
 This standard describes an integrated XML schema set suited for exchanges of above navigation data messages . 
 
 \begin{tabular}{l}
-\textit{CCSDS 508.0-B "Conjunction Data Message" \cite{CCSDS 508.0-B}} \\
+\textit{CCSDS-508.0-B "Conjunction Data Message" \cite{CCSDS-508.0-B}} \\
 \end{tabular}
 
 This standard specifies a message format for use in exchange of spacecraft conjunction information between originators of conjunction assessments and satellite owner/operators and other authorized parties. 
 
 \begin{tabular}{l}
-\textit{CCSDS 509.0-B "Pointing Request Message" \cite{CCSDS 509.0-B}} \\
+\textit{CCSDS-509.0-R "Pointing Request Message" \cite{CCSDS-509.0-R}} \\
 \end{tabular}
 
 This standard defines a message format to allow exchange of information about a requested pointing of a spacecraft. These can be requested (sequences of) changes of the attitude of the spacecraft or of an articulate spacecraft component. Pointing requests are transmitted, for instance, from scientists who operate an onboard instrument to the operator of the  spacecraft.

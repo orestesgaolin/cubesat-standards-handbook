@@ -13,8 +13,8 @@ The payload system provides the functionality to fulfill the specific mission ob
 \subsubsection{Lossless Data Compression}
 
 \begin{tabular}{l}
-\textit{CCSDS 121.0-B "Lossless Data Compression" \cite{CCSDS-120.0-G}} \\
-\textit{CCSDS 120.0-G "Lossless Data Compression" \cite{CCSDS-121.0-B}}
+\textit{CCSDS-121.0-B "Lossless Data Compression" \cite{CCSDS-120.0-G}} \\
+\textit{CCSDS-120.0-G "Lossless Data Compression" \cite{CCSDS-121.0-B}}
 \end{tabular}
 
 The lossless source coding technique preserves source data accuracy and removes redundancy in the data source. This technique is particularly useful when data integrity cannot be compromised. The described lossless source coder consists of two separate functional parts: the preprocessor and the adaptive entropy coder. 
@@ -22,7 +22,7 @@ The lossless source coding technique preserves source data accuracy and removes 
 The role of the \textbf{preprocessor} is to transform the data into samples that can be more efficiently compressed by the entropy encoder. It applies a reversible function to input data samples to produce the lowest entropy, which is a measure of the smallest average number of bits that can be used to represent each sample. In general a preprocessor that removes correlation between samples in the input data block will improve the performance of the entropy coder. The \textbf{adaptive entropy coder} uses variable-length codes and compresses data by assigning shorter codewords to symbols that are expected to occur with higher frequency. By using several different codes and transmitting the code identifier, the algorithm can adapt to many sources from low entropy (more compressible) to high entropy (less compressible).
 
 \begin{tabular}{l}
-\textit{CCSDS 123.0-B "Lossless Multispectral and Hyperspectral Image Compression" \cite{CCSDS-123.0-B}}
+\textit{CCSDS-123.0-B "Lossless Multispectral and Hyperspectral Image Compression" \cite{CCSDS-123.0-B}}
 \end{tabular}
 
 The described compressor is applicable to three-dimensional arrays of integer sample values (as obtained from multispectral and hyperspectral imagers and sounders). It consists of two functional parts: a predictor and an encoder. The \textbf{predictor} has as input the original image data and predicts the value of each image sample based on the values of nearby samples in a small three-dimensional neighbourhood. These mapped predictions make up the predictor output. The \textbf{encoder} then works similar as the adaptive entropy encoder presented above, using statistical data that is updated after each sample is encoded.
@@ -30,8 +30,8 @@ The described compressor is applicable to three-dimensional arrays of integer sa
 \subsubsection{Lossless and Lossy Image Data Compression}
 
 \begin{tabular}{l}
-\textit{CCSDS 122.0-B "Image Data Compression" \cite{CCSDS-122.0-B}} \\
-\textit{CCSDS 120.1-G "Image Data Compression" \cite{CCSDS-120.1-G}}
+\textit{CCSDS-122.0-B "Image Data Compression" \cite{CCSDS-122.0-B}} \\
+\textit{CCSDS-120.1-G "Image Data Compression" \cite{CCSDS-120.1-G}}
 \end{tabular}
 
 Several lossless and lossy image compression algorithms widely used, such as JPEG2000 and JPEG-LS. This standard however describes at fast and less complex algorithm that can be applied to grayscale images with integer-valued pixels with a bit depth of 16 bits. It consists of two functional parts: a discrete wavelet transform and a bit-plane encoder. The \textbf{discrete wavelet transform} performs low-pass and high-pass filtering along first horizontal and then vertical direction, resulting in four subband data arrays, each half as wide and half as tall as the original image array. This step is repeated two more time, each time with the obtained left upper subband data array as input. This produces a total of 10 subbands. The \textbf{bit-plane encoder} then processes 64 wavelet coefficients, which are made up from the 16 equally sized blocks of the most upper left subband (termd the DC coefficients) and their mapping to the other subbands.
@@ -39,8 +39,8 @@ Several lossless and lossy image compression algorithms widely used, such as JPE
 \subsubsection{Digital Motion Imagery}
 
 \begin{tabular}{l}
-\textit{CCSDS 766.1-B "Digital Motion Imagery" \cite{CCSDS-766.1-B}} \\
-\textit{CCSDS 706.1-G "Motion Imagery and Applications" \cite{CCSDS-706.1-G}}
+\textit{CCSDS-766.1-B "Digital Motion Imagery" \cite{CCSDS-766.1-B}} \\
+\textit{CCSDS-706.1-G "Motion Imagery and Applications" \cite{CCSDS-706.1-G}}
 \end{tabular}
 
 This standard categories different video applications and relates to it appropriate video resolutions and frame rates. It specifies the commonly used MPEG-4 Part 10 (H.264) as the encoding format intended for real-time applications where live, or nearly live, video needs to be monitored at a ground location during an event or experiment. Further, JPEG2000 is intended for requirements for higher quality or where each individual frame needs to be maintained intact. 
@@ -192,7 +192,7 @@ Similar to the star tracker specification, this standard defines the terminology
 \begin{tabular}{l}
 \textit{ECSS-E-ST-50 "Communications" \cite{ECSS-E-ST-50}} \\
 \textit{ECSS-E-HB-50 "Communications guidelines" \cite{ECSS-E-HB-50}} \\
-\textit{CCSDS 130.0-G "Overview of Space Communications Protocols" \cite{CCSDS 130.0-G}}
+\textit{CCSDS-130.0-G "Overview of Space Communications Protocols" \cite{CCSDS-130.0-G}}
 \end{tabular}
 
 The purpose of space link communication is the provision of end-to-end communication services to and from spacecraft. These links are generally between spacecraft and ground, but also include spacecraft-to-spacecraft links, as well as links between spacecraft and landed elements such as rovers. 
@@ -224,8 +224,8 @@ Figure \ref{fig:Space Communications Protocols Reference Model} shows the availa
 \subsubsection{Physical Layer}
 
 \begin{tabular}{l}
-\textit{CCSDS 401.0-B "Overview of Space Communications Protocols" \cite{CCSDS 401.0-B}} \\
-\textit{CCSDS 413.0-G "Bandwidth-Efficient Modulations" \cite{CCSDS 413.0-G}} \\
+\textit{CCSDS-401.0-B "Overview of Space Communications Protocols" \cite{CCSDS-401.0-B}} \\
+\textit{CCSDS-413.0-G "Bandwidth-Efficient Modulations" \cite{CCSDS-413.0-G}} \\
 \textit{ECSS-E-ST-50-05 "Space engineering - Radio frequency and modulation" \cite{ECSS-E-ST-50-05}}
 \end{tabular}
 
@@ -234,7 +234,7 @@ The physical layer specification covers the characteristics of the radio frequen
 \subsubsection{Data Link Layer}
 
 \begin{tabular}{l}
-\textit{CCSDS 130.2-G "Space Data Link Protocols--Summary of Concept and Rationale" \cite{CCSDS 130.2-G}}
+\textit{CCSDS-130.2-G "Space Data Link Protocols--Summary of Concept and Rationale" \cite{CCSDS-130.2-G}}
 \end{tabular}
 
 The protocol data units used by the data link layer are called \textbf{transfer frames}. Each transfer frame consists of a header which provides protocol information and a data field within which \textbf{service data units} (SDU) are carried.
@@ -254,8 +254,8 @@ The mechanism used by the data link layer protocol for transferring data with di
 \textbf{Telemetry Synchronization and Channel Coding Sublayer}
 
 \begin{tabular}{l}
-\textit{CCSDS 131.0-B "TM Synchronization and Channel Coding" \cite{CCSDS 131.0-B}} \\
-\textit{CCSDS 130.1-G "TM Synchronization and Channel Coding--Summary of Concept and Rationale" \cite{CCSDS 130.1-G}}
+\textit{CCSDS-131.0-B "TM Synchronization and Channel Coding" \cite{CCSDS-131.0-B}} \\
+\textit{CCSDS-130.1-G "TM Synchronization and Channel Coding--Summary of Concept and Rationale" \cite{CCSDS-130.1-G}}
 \end{tabular}
 
 The TM channel coding and synchronization sublayer provides the following three functions for transferring \textbf{telemetry transfer frames} over a space link: error-control coding, synchronization, and pseudo-randomization. 
@@ -277,8 +277,8 @@ There is no prescription on how to arrange the CADUs that are sent over the phys
 \textbf{Telecommand Synchronization and Channel Coding Sublayer}
 
 \begin{tabular}{l}
-\textit{CCSDS 231.0-B "TC Synchronization and Channel Coding" \cite{CCSDS 231.0-B}} \\
-\textit{CCSDS 230.1-G "TC Synchronization and Channel Coding--Summary of Concept and Rationale" \cite{CCSDS 230.1-G}}
+\textit{CCSDS-231.0-B "TC Synchronization and Channel Coding" \cite{CCSDS-231.0-B}} \\
+\textit{CCSDS-230.1-G "TC Synchronization and Channel Coding--Summary of Concept and Rationale" \cite{CCSDS-230.1-G}}
 \end{tabular}
 
 The TC channel coding and synchronization sublayer provides the following four functions for transferring \textbf{telecommand transfer frames} over a space link: error-control coding, synchronization, pseudo-randomization, and repeated transmissions. 
@@ -325,7 +325,7 @@ The acquisition sequence and the idle sequence is a pattern of alternating ones 
 \textbf{Telemetry Space Data Link Protocol Sublayer}
 
 \begin{tabular}{l}
-\textit{CCSDS 132.0-B "TM Space Data Link Protocol" \cite{CCSDS 132.0-B}} 
+\textit{CCSDS-132.0-B "TM Space Data Link Protocol" \cite{CCSDS-132.0-B}} 
 \end{tabular}
 
 The telemetry space data link protocol has the features that it is: unidirectional (data flow is one way), unconfirmed service (sending end does not receive confirmation), incomplete service (completeness is not guaranteed), sequence-preserving (the sequence of service data units is preserved, although there may be gaps and duplications).
@@ -353,8 +353,8 @@ The purpose of the operational control field (OCF) is to provide a mechanism for
 \textbf{Telecommand Space Data Link Protocol Sublayer}
 
 \begin{tabular}{l}
-\textit{CCSDS 232.0-B "TC Space Data Link Protocol" \cite{CCSDS 232.0-B}} \\
-\textit{CCSDS 232.1-B "Communications Operation Procedure-1" \cite{CCSDS 232.1-B}}
+\textit{CCSDS-232.0-B "TC Space Data Link Protocol" \cite{CCSDS-232.0-B}} \\
+\textit{CCSDS-232.1-B "Communications Operation Procedure-1" \cite{CCSDS-232.1-B}}
 \end{tabular}
 
 The telecommand space data link protocol has the features that it is: unidirectional (data flow is one way), asynchronous service (data transfer is requested at any time), sequence preserving service (the sequence of service data units is preserved, except for expedited Type-B service).
@@ -425,7 +425,7 @@ Finally, the expedited service (BD service) is used only in exceptional circumst
 \label{sec:Network Layer}
 
 \begin{tabular}{l}
-\textit{CCSDS 133.0-B "Space Packet Protocol" \cite{CCSDS 133.0-B}} 
+\textit{CCSDS-133.0-B "Space Packet Protocol" \cite{CCSDS-133.0-B}} 
 \end{tabular}
 
 The protocol data units used by the network layer are called \textbf{space packets}. Aside from a header that identifies the packet, the internal data content is completely under control of the user application.
@@ -468,7 +468,7 @@ The protocol stack for transport of telecommands and telemetry are shown in Figu
 \subsection{Onboard Interface Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 850.0-G "Spacecraft Onboard Interface Services" \cite{CCSDS 850.0-G}} 
+\textit{CCSDS-850.0-G "Spacecraft Onboard Interface Services" \cite{CCSDS-850.0-G}} 
 \end{tabular}
 
 The spacecraft onboard interface services (SOIS) standardizes the services to be supported by underlying protocols in the onboard software (OBSW) on application support layer and subnetwork layer. Figure \ref{fig:Spacecraft Onboard Interface Services Reference Model} shows a layered view of the recommended services and their associated access points. User, i.e. mission specific applications make use of the \textbf{application support layer} services (and possibly any lower level service). The \textbf{transfer layer} provides transport and network layer services based on existing (or dedicated) protocols (such as space packet for the network protocol). In many cases the transport layer will not be required, unless routing across multiple data links is needed. The \textbf{subnetwork layer} provides access to the data link medium and provides a set of services to be mapped over the subnetwork defined by that medium.
@@ -483,7 +483,7 @@ The spacecraft onboard interface services (SOIS) standardizes the services to be
 \subsubsection{Subnetwork Layer - Packet Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 851.0-M "Spacecraft Onboard Interface Services--Subnetwork Packet Service" \cite{CCSDS 851.0-M}} 
+\textit{CCSDS-851.0-M "Spacecraft Onboard Interface Services--Subnetwork Packet Service" \cite{CCSDS-851.0-M}} 
 \end{tabular}
 
 The \textbf{packet service} transfers variable length, delimited octet strings, from one endpoint on a data link to another endpoint within the same subnetwork. It defines four classes of quality of service (QoS) for the transfer and provides the following three primitives: packet send request, packet receive indication, and packet failure indication (depending on the QoS).
@@ -491,7 +491,7 @@ The \textbf{packet service} transfers variable length, delimited octet strings, 
 \subsubsection{Subnetwork Layer - Memory Access Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 852.0-M "Spacecraft Onboard Interface Services--Subnetwork Memory Access Service" \cite{CCSDS 852.0-M}} 
+\textit{CCSDS-852.0-M "Spacecraft Onboard Interface Services--Subnetwork Memory Access Service" \cite{CCSDS-852.0-M}} 
 \end{tabular}
 
 The \textbf{memory access service} provides means for a user entity to retrieve or change data located in memory hosted by a node on a subnetwork. The QoS comprises acknowledgement, authorisation, priority, and other aspects. The service provides the following primitives: read request, read indication, write request, an atomic read/modify/write request (useful for example to set individual bits), and a memory access result indication (as a response to the write and atomic read/modify/write).
@@ -499,7 +499,7 @@ The \textbf{memory access service} provides means for a user entity to retrieve 
 \subsubsection{Subnetwork Layer - Subnetwork Synchronisation Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 853.0-M "Spacecraft Onboard Interface Services--Subnetwork Synchronisation Service" \cite{CCSDS 853.0-M}} 
+\textit{CCSDS-853.0-M "Spacecraft Onboard Interface Services--Subnetwork Synchronisation Service" \cite{CCSDS-853.0-M}} 
 \end{tabular}
 
 The \textbf{synchronisation service} provides a means for a user entity to maintain knowledge of time which is common to all data systems on the subnetwork. It is a best-effort service which provides the following primitives: time request, time indication, and optionally also: event request, event indication.
@@ -507,7 +507,7 @@ The \textbf{synchronisation service} provides a means for a user entity to maint
 \subsubsection{Subnetwork Layer - Subnetwork Device Discovery Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 854.0-M "Spacecraft Onboard Interface Services--Subnetwork Device Discovery Service" \cite{CCSDS 854.0-M}} 
+\textit{CCSDS-854.0-M "Spacecraft Onboard Interface Services--Subnetwork Device Discovery Service" \cite{CCSDS-854.0-M}} 
 \end{tabular}
 
 The \textbf{device discovery service} provides a means for a user entity to receive notification of the presence of other nodes on the subnetwork. It is a best-effort service which provides the following primitives: device discovery request, device discovery indication, and device discovery loss indication.
@@ -515,7 +515,7 @@ The \textbf{device discovery service} provides a means for a user entity to rece
 \subsubsection{Subnetwork Layer - Subnetwork Test Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 855.0-M "Spacecraft Onboard Interface Services--Subnetwork Test Service" \cite{CCSDS 855.0-M}} 
+\textit{CCSDS-855.0-M "Spacecraft Onboard Interface Services--Subnetwork Test Service" \cite{CCSDS-855.0-M}} 
 \end{tabular}
 
 The \textbf{test service} provides a means for a user entity to test functionality and connectivity of the subnetwork. It is a best-effort service, which provides the following primitives: test request and test indication.
@@ -525,7 +525,7 @@ The \textbf{test service} provides a means for a user entity to test functionali
 The \textbf{command and data acquisition services} provide the ability for onboard applications to command and acquire data from onboard devices across subnetworks, whilst being isolated from the protocols associated with the particular subnetworks. Applications can interface to the functionality directly provided by a physical device or with a higher level abstraction of the physical device, known as a virtual device. The individual services that comprise the command and data acquisition services are described in the following.
 
 \begin{tabular}{l}
-\textit{CCSDS 871.0-M "Spacecraft Onboard Interface Services--Device Access Service" \cite{CCSDS 871.0-M}} 
+\textit{CCSDS-871.0-M "Spacecraft Onboard Interface Services--Device Access Service" \cite{CCSDS-871.0-M}} 
 \end{tabular}
 
 The \textbf{device access service} (DAS) provides a standard interface between onboard software applications and flight hardware such as sensors and actuators. To acquire a value (i.e. data) from a device, an application invokes the "acquire from device request" primitive and obtains the result in form of an "acquire from device indication" primitive. To command (i.e. send a value to) a device, an application invokes the "command device request" primitive and obtains the result in form of an "command device indication" primitive, which indicates whether or not the command was sent successfully and, if available, more result metadata. The DAS uses either the packet service or the memory access service form the subnetwork layer to implement its functionality. An example is shown in Figure \ref{fig:Example Device Access Service}.
@@ -537,7 +537,7 @@ The \textbf{device access service} (DAS) provides a standard interface between o
 \end{figure}
 
 \begin{tabular}{l}
-\textit{CCSDS 871.2-M "Spacecraft Onboard Interface Services--Device Virtualization Service" \cite{CCSDS 871.2-M}} 
+\textit{CCSDS-871.2-M "Spacecraft Onboard Interface Services--Device Virtualization Service" \cite{CCSDS-871.2-M}} 
 \end{tabular}
 
 The \textbf{device virtualization service} (DVS) provides applications with functional interfaces to devices, abstracted from the protocols used for accessing the devices and the data encodings used in those protocols. This is a further abstraction on top of the device access service that provides applications with raw interfaces to devices, only abstracted from the subnetwork protocols used for exchanging data with the devices. Similar to the DAS, the DVS provides service primitives for commanding and data acquisitions. In contrast however, it uses logical identifiers for the device and value identifiers, which are then mapped to the physical ones via a managed \textbf{device and value identifier resolution table}.
@@ -551,7 +551,7 @@ An example would be to command ON a virtual image of a GPS unit via the DVS, whi
 \end{figure}
 
 \begin{tabular}{l}
-\textit{CCSDS 871.1-M "Spacecraft Onboard Interface Services--Device Data Pooling Service" \cite{CCSDS 871.1-M}} 
+\textit{CCSDS-871.1-M "Spacecraft Onboard Interface Services--Device Data Pooling Service" \cite{CCSDS-871.1-M}} 
 \end{tabular}
 
 The \textbf{device data pooling service} (DDPS) enables onboard software to access pooled data acquired from simple onboard hardware devices such as sensors and actuators, without explicitly requesting an acquisition from the real device. The layout of a data pool is shown in Figure \ref{fig:Layout of Data Pool}. At each sample acquisition, the various pre-defined values are sampled and stored together with a time stamp. A (normally short) history of those samples is maintained.
@@ -573,7 +573,7 @@ The sample acquisition period can be conveniently synchronized using the subnetw
 The DDPS provides service primitives for creating, deleting, starting, and stopping such data pools, and for reading them.
 
 \begin{tabular}{l}
-\textit{CCSDS 871.3-M "Spacecraft Onboard Interface Services--Device Enumeration Service" \cite{}} 
+\textit{CCSDS-871.3-M "Spacecraft Onboard Interface Services--Device Enumeration Service" \cite{}} 
 \end{tabular}
 
 The \textbf{device enumeration service} (DES) provides management and user notification of addition of devices to or removal of devices from a spacecraft. The main goal of DES is to assist onboard reconfiguration functions, such as mode management or fault detection, isolation, and recovery regarding the notification of changes in the spacecraft configuration, and the execution of operations needed to adjust the onboard software to the new configuration. An example is given in Figure \ref{fig:Device Enumeration Service and Redundancy}.
@@ -595,7 +595,7 @@ The DES provides service primitives for adding, removing, querying/enumerating o
 \subsubsection{Application Support Layer - Time Access Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 872.0-M "Spacecraft Onboard Interface Services--Time Access Service" \cite{}} 
+\textit{CCSDS-872.0-M "Spacecraft Onboard Interface Services--Time Access Service" \cite{}} 
 \end{tabular}
 
 The \textbf{time access service} provides a user entity with a consistent interface to a local time source that is correlated to some centrally maintained master onboard time source. The local time sources are typically free-running hardware counters accumulating seconds and sub-seconds of elapsed time. The master time source usually has the most accurate precision and broadcasts its time information to the other entities on the subnetwork, via the synchronisation service (see Figure \ref{fig:Typical Onboard Time System Architecture}). 
@@ -611,7 +611,7 @@ Applications should use this service to obtain the the time from the local time 
 \subsubsection{Application Support Layer - File and Packet Store Services}
 
 \begin{tabular}{l}
-\textit{CCSDS 873.0-M "Spacecraft Onboard Interface Services--Time Access Service" \cite{}} 
+\textit{CCSDS-873.0-M "Spacecraft Onboard Interface Services--Time Access Service" \cite{}} 
 \end{tabular}
 
 The \textbf{file and packet store services} (FPSS) comprise the following services: file access service (FAS), file management service (FMS), packet store access service (PSAS), and packet store management service (PSMS). These services are used to access and manage files and packets residing in file and packet stores. A \textbf{file store} is considered to be a file system (flat or hierarchical) and the associated storage medium. A \textbf{packet store} does not use a file system, but instead is organized either as an bounded or circular first-in first-out (FIFO) store, or a random-access store (the later being much more complex to manage). A large number of primitives are defined for each service to provide the functionality of accessing and managing the contents of the stores. An example deployment is shown in Figure \ref{fig:Example Deployment of Packet Store} where packets are stored in the onboard solid state mass memory (SSMM).
@@ -625,7 +625,7 @@ The \textbf{file and packet store services} (FPSS) comprise the following servic
 \subsubsection{Application Support Layer - Message Transfer Service}
 
 \begin{tabular}{l}
-\textit{CCSDS 875.0-M "Spacecraft Onboard Interface Services--Message Transfer Service" \cite{}} 
+\textit{CCSDS-875.0-M "Spacecraft Onboard Interface Services--Message Transfer Service" \cite{}} 
 \end{tabular}
 
 The \textbf{message transfer service} (MTS) provides applications with a standard service for mediating the transfer of discrete data, i.e. messages, between onboard software users in a (potentially) distributed onboard system.
@@ -643,8 +643,8 @@ The SOIS MTS is essentially a subset of the asynchronous message service (AMS) a
 \subsubsection{Electronic Data Sheets}
 
 \begin{tabular}{l}
-\textit{CCSDS 876.0-R "Spacecraft Onboard Interface Services--XML Specification for Electronic Data Sheets for Onboard Devices" \cite{}} \\
-\textit{CCSDS 876.1-R "Spacecraft Onboard Interface Services--Common Dictionary of Terms for Onboard Devices and Software Components" \cite{}}
+\textit{CCSDS-876.0-R "Spacecraft Onboard Interface Services--XML Specification for Electronic Data Sheets for Onboard Devices" \cite{}} \\
+\textit{CCSDS-876.1-R "Spacecraft Onboard Interface Services--Common Dictionary of Terms for Onboard Devices and Software Components" \cite{}}
 \end{tabular}
 
 The \textbf{SOIS electronic datasheets} (SEDS) are intended to be a machine-understandable mechanism for describing devices which may be accessed using the SOIS command and data acquisition services. In this way it potentially shall replace the traditional user manuals, interface control documents, and datasheets which accompany a device and are necessary to determine the operation of the device and how to communicate with it.
@@ -659,9 +659,9 @@ The SEDS are in XML format and specified by an XSD schema that allows for checki
 \subsubsection{File Exchange Applications}
 
 \begin{tabular}{l}
-\textit{CCSDS 727.0-B "CCSDS File Delivery Protocol (CFDP)" \cite{CCSDS 727.0-B}} \\
-\textit{CCSDS 720.1-G "CCSDS File Delivery Protocol (CFDP) Part 1: Introduction and Overview" \cite{CCSDS 727.1-B}} \\
-\textit{CCSDS 720.2-G "CCSDS File Delivery Protocol (CFDP) Part 2: Implementers Guide" \cite{CCSDS 727.2-B}} \\
+\textit{CCSDS-727.0-B "CCSDS File Delivery Protocol (CFDP)" \cite{CCSDS-727.0-B}} \\
+\textit{CCSDS-720.1-G "CCSDS File Delivery Protocol (CFDP) Part 1: Introduction and Overview" \cite{CCSDS-720.1-G}} \\
+\textit{CCSDS-720.2-G "CCSDS File Delivery Protocol (CFDP) Part 2: Implementers Guide" \cite{CCSDS-720.2-G}} \\
 \end{tabular}
 
 This standard defines a protocol suitable for the transmission of files to and from spacecraft data storage and capable of operating in a wide variety of mission configurations. In addition to the purely file delivery related functions, the protocol includes file management services to allow control over the storage medium. Although the protocol can operate over a wide range of subnetwork services, this standard assumes the use of existing CCSDS packet services. 
