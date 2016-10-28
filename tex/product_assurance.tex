@@ -29,7 +29,7 @@ The product assurance (PA) manager shall ensure that a \textbf{qualification sta
 
 Critical items (CI) are potential threats to the performance, quality, dependability and safety of a system that are controlled by a specific action plan in order to mitigate emanating risks and to prevent undesirable consequences. Such items shall be formally identified and controlled in a \textbf{critical-item list} (Section \ref{sec:Critical-Item List}). 
 
-Various product assurance analysis provide considerable inputs for identification of critical items (e.g. RAMS: FMECA results, hazard analysis results; PMP: non-qualified parts materials and processes; EEE: non-qualified parts or new technology; lessons learned from previous programs). Annex C of ECSS-Q-ST-10-04 provides a guide for identifying critical items.
+Various product assurance analyses provide considerable inputs for identification of critical items (e.g. RAMS: FMECA results, hazard analysis results; PMP: non-qualified parts, materials and processes; EEE: non-qualified parts or new technology; lessons learned from previous programs). Annex C of ECSS-Q-ST-10-04 provides a guide for identifying critical items.
 
 The control process for critical items is similar to the risk management process and bears interface to it, namely:
 
@@ -94,7 +94,7 @@ For the \textbf{handling, storage and preservation} of items, proper means shall
 
 Quality assurance principles for design and verification phase comprise the definition of design rules and methods, the selection of tools, and to ensure that the design is producible and repeatable.
 
-The use of \textbf{space qualified parts} in system design significantly adds to the quality of the system in terms of reliability. The ESCC (European Space Components Coordination) for example publishes a list of components and technologies which have been, respectively, qualified and capability approved by ESA. \cite{spacecomponents.org}
+The use of \textbf{space qualified parts} in system design significantly adds to the quality of the system in terms of reliability. The ESCC (European Space Components Coordination) for example publishes a list of components and technologies which have been, respectively, qualified and capability approved by ESA \cite{spacecomponents.org}.
 
 Another aspect of quality assurance covers the use of \textbf{off-the-shelf} (OTS) hardware items as addressed in ECSS-Q-ST-20-10 \cite{ECSS-Q-ST-20-10}, namely those that have not yet been qualified for space applications. OTS items are those that, even if not necessarily developed for space applications, can be procured from the market and utilized in a space system. For CubeSat missions this typically forms a large part of items that make up the spacecraft system. It is therefore not foreseen to make a strict distinction between such items, and rather focus on extensive testing and verification on all levels and various stages, as discussed in Section \ref{sec:Verification}.
 
@@ -113,7 +113,7 @@ Further, \textbf{logbooks} shall be maintained on system, subsystem, and equipme
 
 Quality assurance shall ensure that internal and external test facilities conform to specified requirements. Details on quality assurance for test centers are provided in ECSS-Q-ST-20-07 \cite{ECSS-Q-ST-20-07}.
 
-QA shall also ensure that test documentation is done properly, comprising test procedures and test reports. QA personnel monitor test executions where needed and attend test reviews.
+QA shall also ensure that test documentation is done properly, comprising test procedures and test reports. QA personnel shall monitor test executions where needed and attend test reviews.
 
 \subsubsection{Acceptance and Delivery}
 
@@ -141,7 +141,7 @@ Dependability aspects shall be considered already in the process of requirements
 \item monitoring of essential mission performance parameters
 \end{itemize}
 
-\textbf{Derating} means to design a system such that its components operate at a significantly reduced level of stress to increase reliability and to insure useful life and design margins (see ECSS-Q-ST-30-11 \cite{ECSS-Q-ST-30-11}).
+\textbf{Derating} means to design a system such that its components operate at a significantly reduced level of stress to increase reliability and to ensure useful life and design margins (see ECSS-Q-ST-30-11 \cite{ECSS-Q-ST-30-11}).
 
 In support of achieving dependable design, the definition of \textbf{success criteria} on each level of the system shall be defined.
 
@@ -292,10 +292,10 @@ Appendix D and E of ECSS-Q-ST-70-01 provide guidelines for \textbf{general clean
 
 \subsubsection{Material Testing}
 
-Several ECSS standards cover the details of testing of various (basic) materials (not including assemblies or electronic components). It shall be noted that those tests are usually not carried out for a typical CubeSat project, unless specifically required.
+Several ECSS standards cover the details of testing of various (basic) materials (not including assemblies or electronic components).
 
 \begin{itemize}
-\item \textbf{Outgassing}: Thermal vacuum tests as described in ECSS-Q-ST-70-02 \cite{ECSS-Q-ST-70-02} and ECSS-Q-TM-70-52 \cite{ECSS-Q-TM-70-52} are used to determine the outgassing screening properties of materials proposed for use in space. The focus is on determining the the values of total mass loss (TML), recovered mass loss (RML), and collected volatile condensable material (CVCM) of a specimen. It describes the requirements on the test preparation and equipment, the test procedure and test levels.
+\item \textbf{Outgassing}: Thermal vacuum tests as described in ECSS-Q-ST-70-02 \cite{ECSS-Q-ST-70-02} and ECSS-Q-TM-70-52 \cite{ECSS-Q-TM-70-52} are used to determine the outgassing screening properties of materials proposed for use in space. The focus is on determining the values of total mass loss (TML), recovered mass loss (RML), and collected volatile condensable material (CVCM) of a specimen. It describes the requirements on the test preparation and equipment, the test procedure and test levels.
 \item \textbf{Thermal cycling}: The objective of thermal cycling testing is to determine the ability of articles to withstand changes of ambient temperature under vacuum. The specimen are subjected to a certain number of thermal cycles, oscillating within a defined temperature range, as specified in ECSS-Q-ST-70-04 \cite{ECSS-Q-ST-70-04}.
 \item \textbf{Radiation}: The testing of specimen exposed to electromagnetic radiation and charged particles is described in ECSS-Q-ST-70-06 \cite{ECSS-Q-ST-70-06}. 
 \item \textbf{Corrosion}: Although ECSS-Q-ST-70-20 \cite{ECSS-Q-ST-70-20} is focused on corrosion tests of silver-plated copper wire and cables, it also is a good guideline on general corrosion tests.
@@ -346,13 +346,13 @@ Several ECSS standards cover the details of items on parts level. (A part is a s
 
 The software product assurance discipline defines requirements to ensure that developed or reused software and software services perform properly and safely in their operational environments. It also includes requirements for the development of supporting software (e.g. for test and verification) which affects the quality of the deliverable product or service.
 
-In a system of systems, a software product can be considered to constitute a system itself, whether it is firmware embedded in a microcontroller or data systems running on personal or industrial computers. Being a system, all aspects of management, product assurance, and engineering apply equally to it, as to they do to the overall space system of which it is part. It makes therefore a difference whether the software development is carried out in the frame of the project or implemented as an autonomous software project, which is then (re)used for the particular CubeSat project.
+In a system of systems, a software product can be considered to constitute a system itself, whether it is firmware embedded in a microcontroller or data systems running on personal or industrial computers. Being a system, all aspects of management, product assurance, and engineering apply to it. It makes therefore a difference whether the software development is carried out in the frame of the project or implemented as an autonomous software project, which is then (re)used for the particular CubeSat project.
 
 For an autonomous, \textbf{standalone software project}, ECSS-Q-ST-80 together with ECSS-E-ST-40 \cite{ECSS-E-ST-40} provide all the framework requirements for its implementation, covering the entire life cycle from requirements definition, architectural design, software items design, coding, testing and validation, operation, and maintenance. The use of such independently developed software in the CubeSat project would then only require the application of the terms governing the reuse of existing software as detailed in ECSS-Q-ST-80.
 
 For \textbf{integrated software projects} on the other hand, developed as part of the space project, many of the management and product assurance aspects can be shared within the project. For example, software risk management can be part of the overall project risk management. Also, the software product assurance plan, may be integrated into the overall product assurance plan. 
 
-Nonetheless, for CubeSat projects we recommended to pursue software project (in particular those that are not firmware projects) as independent projects, decoupled from the specific CubeSat mission. This way it enforces re-usability of software and it allows the selection of a different development approach, such as agile development. 
+Nonetheless, for CubeSat projects we recommend to pursue software project (in particular those that are not firmware projects) as independent projects, decoupled from the specific CubeSat mission. This way it enforces re-usability of software and it allows the selection of a different development approach, such as agile development. 
 
 Either way, the following two documents shall be prepared and maintained by the product assurance manager. The \textbf{software product assurance plan} (Section \ref{sec:Software Product Assurance Plan}) defines all the product assurance aspects of the software development (as mentioned, this one may be merged into the overall product assurance plan). The \textbf{software product assurance milestone report} (Section \ref{sec:Software Product Assurance Milestone Report}) is used to report on software product assurance activities that were performed during the past project phase.
 

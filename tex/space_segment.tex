@@ -34,7 +34,7 @@ The described compressor is applicable to three-dimensional arrays of integer sa
 \textit{CCSDS-120.1-G "Image Data Compression" \cite{CCSDS-120.1-G}}
 \end{tabular}
 
-Several lossless and lossy image compression algorithms widely used, such as JPEG2000 and JPEG-LS. This standard however describes at fast and less complex algorithm that can be applied to grayscale images with integer-valued pixels with a bit depth of 16 bits. It consists of two functional parts: a discrete wavelet transform and a bit-plane encoder. The \textbf{discrete wavelet transform} performs low-pass and high-pass filtering along first horizontal and then vertical direction, resulting in four subband data arrays, each half as wide and half as tall as the original image array. This step is repeated two more time, each time with the obtained left upper subband data array as input. This produces a total of 10 subbands. The \textbf{bit-plane encoder} then processes 64 wavelet coefficients, which are made up from the 16 equally sized blocks of the most upper left subband (termd the DC coefficients) and their mapping to the other subbands.
+Several lossless and lossy image compression algorithms are widely used, such as JPEG2000 and JPEG-LS. This standard however describes a fast and less complex algorithm that can be applied to greyscale images with integer-valued pixels with a bit depth of 16 bits. It consists of two functional parts: a discrete wavelet transform and a bit-plane encoder. The \textbf{discrete wavelet transform} performs low-pass and high-pass filtering along first horizontal and then vertical direction, resulting in four subband data arrays, each half as wide and half as tall as the original image array. This step is repeated two more time, each time with the obtained left upper subband data array as input. This produces a total of 10 subbands. The \textbf{bit-plane encoder} then processes 64 wavelet coefficients, which are made up from the 16 equally sized blocks of the most upper left subband (termd the DC coefficients) and their mapping to the other subbands.
 
 \subsubsection{Digital Motion Imagery}
 
@@ -82,7 +82,7 @@ The design of mechanisms is very much mission specific. Deployments from CubeSat
 
 Two types of power distribution switches are available. The \textbf{latching current limiter} (LCL) is a switchable and latching protection between a power source and the load, causing a trip off after having achieved at its outputs and over-current limitation for a defined trip-off time (Figure \ref{fig:LCL Generic Block Diagram}). In case of a load malfunction implying an overload, they enter current limitation mode for the given trip off time duration, and then switch off. LCLs can be externally commanded into ON or OFF mode.
 
-The \textbf{retriggerable latching current limiter} (RLCL) is an LCL that automatically attempts to switch ON when powered or after a retrigger interval when a trip off event occurred. RLCLs are normally used to supply essential spacecraft loads (for example decoders, receivers, and reconfiguration modules) and as such they are supposed to provide continuously power to the load after start up. They react similar to a load malfunction, namely to limit current and then switch off. But they will attempt a re-start automatically after a given time duration. It may be desired to all an external command to disable this retriggering behaviour, but generally this is not done due to the criticality of this switch.
+The \textbf{retriggerable latching current limiter} (RLCL) is an LCL that automatically attempts to switch ON when powered or after a retrigger interval when a trip off event occurred. RLCLs are normally used to supply essential spacecraft loads (for example decoders, receivers, and reconfiguration modules) and as such they are supposed to provide continuously power to the load after start up. They react similar to a load malfunction, namely to limit current and then switch off. But they will attempt a re-start automatically after a defined time duration.
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.2]{fig/lcl_generic_block_diagram}
@@ -486,7 +486,7 @@ The spacecraft onboard interface services (SOIS) standardizes the services to be
 \textit{CCSDS-851.0-M "Spacecraft Onboard Interface Services--Subnetwork Packet Service" \cite{CCSDS-851.0-M}} 
 \end{tabular}
 
-The \textbf{packet service} transfers variable length, delimited octet strings, from one endpoint on a data link to another endpoint within the same subnetwork. It defines four classes of quality of service (QoS) for the transfer and provides the following three primitives: packet send request, packet receive indication, and packet failure indication (depending on the QoS).
+The \textbf{packet service} transfers variable length, delimited octet strings from one endpoint on a data link to another endpoint within the same subnetwork. It defines four classes of quality of service (QoS) for the transfer and provides the following three primitives: packet send request, packet receive indication, and packet failure indication (depending on the QoS).
 
 \subsubsection{Subnetwork Layer - Memory Access Service}
 
@@ -542,7 +542,7 @@ The \textbf{device access service} (DAS) provides a standard interface between o
 
 The \textbf{device virtualization service} (DVS) provides applications with functional interfaces to devices, abstracted from the protocols used for accessing the devices and the data encodings used in those protocols. This is a further abstraction on top of the device access service that provides applications with raw interfaces to devices, only abstracted from the subnetwork protocols used for exchanging data with the devices. Similar to the DAS, the DVS provides service primitives for commanding and data acquisitions. In contrast however, it uses logical identifiers for the device and value identifiers, which are then mapped to the physical ones via a managed \textbf{device and value identifier resolution table}.
 
-An example would be to command ON a virtual image of a GPS unit via the DVS, which then invokes a number of DAS functions to implement this functionality. the required mapping of identifiers for each service layer is shown in Figure \ref{}.
+An example would be to command ON a virtual image of a GPS unit via the DVS, which then invokes a number of DAS functions to implement this functionality. the required mapping of identifiers for each service layer is shown in Figure \ref{fig:Mapping of Identifiers}.
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.3]{fig/mapping_of_identifiers}
@@ -584,7 +584,7 @@ The \textbf{device enumeration service} (DES) provides management and user notif
 \label{fig:Device Enumeration Service and Redundancy}
 \end{figure}
 
-The DES provides service primitives for adding, removing, querying/enumerating of devices, and indications of devices found or lost. Its relationship with other SOIS services is shown in Figure \ref{fig:Relationship between Device Enumeration Service and other Services}).
+The DES provides service primitives for adding, removing, querying/enumerating of devices, and indications of devices found or lost. Its relationship with other SOIS services is shown in Figure \ref{fig:Relationship between Device Enumeration Service and other Services}.
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.3]{fig/relationship_between_device_enumeration_service_and_other_services}
@@ -606,7 +606,7 @@ The \textbf{time access service} provides a user entity with a consistent interf
 \label{fig:Typical Onboard Time System Architecture}
 \end{figure}
 
-Applications should use this service to obtain the the time from the local time source rather than, for example, reading directly from the local elapsed time counter hardware registers. The service primitives provide are: time request and time indication for the so-called wall clock capability, and optionally, various primitives for implementing the alarm clock and metronome capability. 
+Applications should use this service to obtain the time from the local time source rather than, for example, reading directly from the local elapsed time counter hardware registers. The service primitives provide are: time request and time indication for the so-called wall clock capability, and optionally, various primitives for implementing the alarm clock and metronome capability. 
 
 \subsubsection{Application Support Layer - File and Packet Store Services}
 
@@ -638,7 +638,7 @@ Four different models of message transfer exist:
 \item Announcement: Messages may be sent to a set of modules selected by the message source.
 \end{itemize}
 
-The SOIS MTS is essentially a subset of the asynchronous message service (AMS) as discussed in Section \ref{sec:}. It provides a large number of service primitives with tailoring in respect to the MTS service definition.
+The SOIS MTS is essentially a subset of the asynchronous message service (AMS). It provides a large number of service primitives with tailoring in respect to the MTS service definition.
 
 \subsubsection{Electronic Data Sheets}
 

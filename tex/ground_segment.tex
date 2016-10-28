@@ -349,7 +349,7 @@ The \textbf{Access} function helps consumers to identify and obtain descriptions
 \textit{"Two-line element set" \cite{wiki-TLE}} \\
 \end{tabular}
 
-A widely used format for exchange of orbit data are the so-called two-line element set (TLE). A TLE is a data format (two lines of 80-column ASCII text, see Figure \ref{fig:Example of Two Line Element Set (TLE)}) that encodes a list of orbital elements of a satellite for a given point in time, the epoch. Using suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the applied simplified perturbations models, so any algorithm using a TLE as a data source must implement one of those models to correctly compute the state at a time of interest.
+A widely used format for exchange of orbit data are the so-called two-line element set (TLE). A TLE is a data format (two lines of 80-column ASCII text, see Figure \ref{fig:Example of Two Line Element Set}) that encodes a list of orbital elements of a satellite for a given point in time, the epoch. Using suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the applied simplified perturbations models, so any algorithm using a TLE as a data source must implement one of those models to correctly compute the state at a time of interest.
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.35]{fig/example_of_tle}
@@ -373,7 +373,7 @@ This standard specifies message formats for use in transferring spacecraft orbit
 
 \begin{itemize}
 \item Orbit parameter message (OPM): specifies the position and velocity of a single object at a specified epoch. It requires the use of a propagation technique to determine position and velocity at times different from the epoch.
-\item Orbit mean-elements message (OMM): specifies the orbital characteristics of a single object at a specified epoch, expressed in mean Keplerian elements. It can be used to convert to and from TLE messages. Figure \ref{fig:Example of Orbit Mean-Elements Message (OMM)} shows the corresponding OMM for the TLE shown in \ref{fig:Example of Two Line Element Set (TLE)}.
+\item Orbit mean-elements message (OMM): specifies the orbital characteristics of a single object at a specified epoch, expressed in mean Keplerian elements. It can be used to convert to and from TLE messages. Figure \ref{fig:Example of Orbit Mean-Elements Message} shows the corresponding OMM for the TLE shown in \ref{fig:Example of Two Line Element Set)}.
 \item Orbit ephemeris message (OEM): specifies the position and velocity of a single object at multiple epochs contained within a specified time range. It is well suited for automated interaction and allows for higher precision compared to the other formats. It requires the use of an interpolation technique to interpret the position and velocity at times different from the tabular epochs. 
 \end{itemize}
 
@@ -404,7 +404,7 @@ This standard specifies message formats for use in transferring spacecraft orbit
 \textit{CCSDS-505.0-B "XML Specification for Navigation Data Messages" \cite{CCSDS-505.0-B}} \\
 \end{tabular}
 
-This standard describes an integrated XML schema set suited for exchanges of above navigation data messages . 
+This standard describes an integrated XML schema set suited for exchanges of above navigation data messages. 
 
 \begin{tabular}{l}
 \textit{CCSDS-508.0-B "Conjunction Data Message" \cite{CCSDS-508.0-B}} \\
@@ -424,7 +424,7 @@ This standard defines a message format to allow exchange of information about a 
 \textit{ECSS-E-TM-10-21 "System modeling and simulation" \cite{ECSS-E-TM-10-21}} \\
 \end{tabular}
 
-Simulation is conducted to support the analysis, design, and verification activities of a space system. Simulation during analysis and design is usually carried out with simplified that then become more and more complex. During development, these software models are partly exchanged with real hardware, to do hardware-in-the-loop testing. During mission operations phase then, the simulation integrates high-fidelity models of the spacecraft and its environment, and possibly uses emulators to run the flight software within the simulation environment.
+Simulation is conducted to support the analysis, design, and verification activities of a space system. Simulation during analysis and design is usually carried out with simplified models that then become more and more complex. During development, these software models are partly exchanged with real hardware, to do hardware-in-the-loop testing. During mission operations phase then, the simulation integrates high-fidelity models of the spacecraft and its environment, and possibly uses emulators to run the flight software within the simulation environment.
 
 A simulator is composed of all or a subset of the components shown in Figure \ref{fig:Simulator Components}.
 

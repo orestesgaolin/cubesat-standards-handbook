@@ -17,7 +17,7 @@ In order to implement the system engineering process, a number of system enginee
 
 System engineering is a multidisciplinary activity that transforms all technical requirements of the system into a system solution. A system is defined as an integrated set of elements to accomplish a defined objective. These elements include hardware, software, firmware, human resources, information, techniques, facilities services, and other support elements.
 
-The concept of "system" is used here in a wide sense. The highest level, often called "mission level" or "space system", consists usually of one (or more) space segment(s), a ground segment, a launch segment, and a user segment. Elements of system decomposition are also considered a system. Hence, a system can be any element at any level of decomposition as defined by the function tree or the product tree. The scope of an element can include hardware, software, procedures, facilities and services.
+The concept of "system" is used here in a wide sense. The highest level, often called "mission level" or "space system", usually consists of one (or more) space segment(s), a ground segment, a launch segment, and a user segment. Elements of system decomposition are also considered a system. Hence, a system can be any element at any level of decomposition as defined by the function tree or the product tree. The scope of an element can include hardware, software, procedures, facilities and services.
 
 The overall objective of system engineering is to obtain a product that satisfies the customer technical requirements within defined budget and time constraints. It includes the activities of definition of requirements, analysis, design and development, and verification. This is applied on all levels of the system. 
 
@@ -29,7 +29,7 @@ The traditional approach for conducting space system engineering is the waterfal
 
 Requirements define the required technical performance of the system. Requirements are established on all levels of the system, and usually are elaborated from top to bottom. For example, a single high level requirement may be split into a number of low level requirements. This is done recursively until requirements on the lowest level are defined. To visualize the requirements, a specification tree may be used. However, to keep the tree manageable, the equipment element level requirements (and below) are usually put on a separate tree.
 
-It must be ensured that requirements are consistent on all levels, that is, that they not contradict one another. Each requirement must be have the characteristics of being: traceable, unique, single, verifiable, unambiguous.
+It must be ensured that requirements are consistent on all levels, that is, that they not contradict one another. Each requirement must be traceable, unique, single, verifiable, and unambiguous.
 
 For being \textbf{traceable}, it must be clear from where the requirement originates, e.g. from a higher level requirements, an imposed constraint, and so on. For this, a requirement traceability matrix is used. For being \textbf{verifiable}, one or more methods must be identified for each requirement that will be used for its verification. \textbf{Unique} means that there must not be duplicated requirements, and \textbf{single} means that a requirement shall only cover one specific performance characteristic. \textbf{Unambiguous} means that requirements shall be written in a clear and precise way that leaves no room for interpretation.
 
@@ -45,7 +45,7 @@ Requirements are collected in a requirements database and by all means should no
 
 Analysis is performed for decomposition of requirements and functional requirements analysis, resolving requirement conflicts, and estimating system performance. It is used to support the requirements engineering and the design process.
 
-As an input to requirement engineering, the system engineering team shall perform an analysis of the \textbf{mission statement document} (Section \ref{sec:Mission Statement Document}) to produce the \textbf{mission description document} (Section \ref{sec:Mission Description Document}). For the case where several mission scenarios shall be compared and traded-off with each other, separate mission description documents, together with system engineering and project management plans are created. The winning concept is then chosen and document in a \textbf{system concept report} (Section \ref{sec:System Concept Report}).
+As an input to requirement engineering, the system engineering team shall perform an analysis of the \textbf{mission statement document} (Section \ref{sec:Mission Statement Document}) to produce the \textbf{mission description document} (Section \ref{sec:Mission Description Document}). For the case where several mission scenarios shall be compared and traded-off with each other, separate mission description documents, together with system engineering and project management plans are created. The winning concept is then chosen and documented in a \textbf{system concept report} (Section \ref{sec:System Concept Report}).
 
 Next, the functional architecture shall be established in form of a \textbf{function tree}. The function tree shall satisfies the customer requirements in terms of functionality, that is, the mission objective shall be composed into functional requirements.
 
@@ -91,9 +91,9 @@ Other supporting documents are the technical budget document and the coordinate 
 \textit{ECSS-E-HB-10-02 "Verification guidelines" \cite{ECSS-E-HB-10-02}}
 \end{tabular}
 
-Verification has the objective to demonstrate that the deliverable products conform to the specified requirements. The verification process activities consist of planning, execution, and reporting and close-out. 
+Verification has the objective to demonstrate that the deliverable products conform to the specified requirements. The verification process activities consist of planning, execution, reporting, and close-out. 
 
-The verification planning is documented in the \textbf{verification plan} (Section \ref{sec:Verification Plan}) and covers the verification approach,model philosophy, methods, levels, stages, and verification tools. 
+The verification planning is documented in the \textbf{verification plan} (Section \ref{sec:Verification Plan}) and covers the verification approach, model philosophy, methods, levels, stages, and verification tools. 
 
 The \textbf{verification approach} activity is started early in the project life cycle. It analyzes which, how, and when requirements shall be verified, taking into account constraints and other factors. For each requirement to be verified, the verification strategy shall be defined in terms of verification methods, level, and stages. This is summarized in the \textbf{verification control document} (Section \ref{sec:Verification Control Document}) also known as verification matrix, which is to be approved by the customer.
 
@@ -110,7 +110,7 @@ The usual approach for new developments is therefore the prototype philosophy. A
 Commonly defined models for verification programs are:
 
 \begin{itemize}
-\item \textbf{Development model} (DM): Used in general for new design or when substantial redesign is performed. Applicable to every type of product (e.g. electronic box, mechanisms, structural parts and thermal equipment) and can be subjected to functional and/or environmental testing. DM are sometimes also called bread board model.
+\item \textbf{Development model} (DM): Used in general for new design or when substantial redesign is performed. Applicable to every type of product (e.g. electronic box, mechanisms, structural parts and thermal equipment), subject to functional and/or environmental testing. DM are sometimes also called bread board model.
 \item \textbf{Structural model} (SM): Fully representative of the end product for structural aspects. Used for qualification of the structural design and for mathematical models correlation. Generally, the system structural model consists of a representative structure, with structural dummies of the flight equipment. It also includes representative mechanical parts of other subsystems (e.g. mechanisms and solar panels). The SM is also used for a final validation of test facilities, GSE, and related procedures.
 \item \textbf{Thermal model} (ThM): Fully representative of the thermal properties of the end product. Used for the qualification of the thermal design and for the correlation of mathematical models. 
 \item \textbf{Structural-thermal model} (STM): Combines the objectives of the SM and ThM.
@@ -136,11 +136,11 @@ The list is ordered by the magnitude of confidence that each verification method
 
 \textbf{Tests} shall be conducted under representative simulated environments. Tests objectives shall be documented via a \textbf{test specification} (Section \ref{sec:Test Specification}), the test conduction via a \textbf{test procedure} (Section \ref{sec:Test Procedure}) and the test results via \textbf{test report} (Section \ref{sec:Test Report}). The overall test program encompassing all tests shall be defined in the \textbf{assembly, integration, and test plan} (Section \ref{sec:Assembly, Integration, and Test Plan}).
 
-\textbf{Analyses} use either theoretical or empirical techniques, such as statistical analysis or computational simulation. Analysis also covers verification by similarity. Analyses are document in the \textbf{analysis report} (Section \ref{sec:Analysis Report}).
+\textbf{Analyses} use either theoretical or empirical techniques, such as statistical analysis or computational simulation. Analysis also covers verification by similarity. Analyses are documented in the \textbf{analysis report} (Section \ref{sec:Analysis Report}).
 
-\textbf{Review of design} uses records or evidence (such as technical drawings) that show unambiguously that a requirement is met. Reviews of design are document in the \textbf{review of design report} (Section \ref{sec:Review of Design Report}).
+\textbf{Review of design} uses records or evidence (such as technical drawings) that show unambiguously that a requirement is met. Reviews of design are documented in the \textbf{review of design report} (Section \ref{sec:Review of Design Report}).
 
-\textbf{Inspection} consists of visual determination of physical characteristics. Examples are visual inspection of products against workmanship errors or checking the conformance of source code against the defined \textbf{coding standards}. Inspections are document in the \textbf{inspection report} (Section \ref{sec:Inspection Report}).
+\textbf{Inspection} consists of visual determination of physical characteristics. Examples are visual inspection of products against workmanship errors or checking the conformance of source code against the defined \textbf{coding standards}. Inspections are documented in the \textbf{inspection report} (Section \ref{sec:Inspection Report}).
 
 In case that a verification encompasses more than one of the above methods, a \textbf{verification report} (Section \ref{sec:Verification Report}) is produced in addition to the other types of reports.
 
@@ -164,7 +164,7 @@ The verification process runs through several subsequent \textbf{verification st
 \item Post-landing (if applicable)
 \end{itemize}
 
-In the \textbf{qualification stage} the verification shall demonstrate that the design, including margin, meets the applicable requirements. Therefore the product to be verified must be representative of the end product in terms of design, materials, tooling, and methods. To decide which item to be verified for the qualification test the general rule is that newly developed items must undergo full qualification, whereas items with heritage must undergo no or delta qualification, depending on their heritage.
+In the \textbf{qualification stage} the verification shall demonstrate that the design, including margin, meets the applicable requirements. Therefore the product to be verified must be representative of the end product in terms of design, materials, tooling, and methods. Newly developed items must undergo full qualification, whereas items with heritage must undergo none or delta qualification, depending on their technological readiness level.
 
 In the \textbf{acceptance stage} the verification shall demonstrate that the product is free of workmanship errors and that it is ready for operation. Acceptance verification is carried out on the final product. 
 
@@ -363,7 +363,7 @@ The primary source for \textbf{energy generation} are solar arrays. Provision sh
 
 The primary mechanism for energy storage is \textbf{electrochemical energy storage}, namely batteries. The battery design shall include signal lines for monitoring of battery voltage and temperature, and the capability to charge or discharge the battery with ground support equipment before launch. Keep in mind that almost all battery technologies can be hazardous if not properly managed. The design of the battery shall therefore preclude the occurrence of over-temperature, excessive currents, overcharging and over-discharging.
 
-The \textbf{power conditioning and control} has the task of providing a (regulated or unregulated) main bus power line from the solar array input in combination with the energy storage components (if available). No single point failure shall result in the loss of the power system in the sense that the minimum mission requirements cannot be met. Also, the following units shall be fully independent from any external control (such as on board computer): main bus voltage regulator, battery discharge control, and solar array controller (if available). In terms of performance, a fully regulated bus shall have a nominal ripple voltage below <TBD>\% of the nominal bus voltage. Bus under-voltage shall be prevented by implementing an autonomous (temporarily) disconnection circuit for non-essential loads. All such current limiting and auto switch-off circuits shall be monitored by telemetry.
+The \textbf{power conditioning and control} has the task of providing a (regulated or unregulated) main bus power line from the solar array input in combination with the energy storage components (if available). No single point failure shall result in the loss of the power system in the sense that the minimum mission requirements cannot be met. Also, the following units shall be fully independent from any external control (such as on board computer): main bus voltage regulator, battery discharge control, and solar array controller (if available). In terms of performance, a fully regulated bus shall have a nominal ripple voltage within a defined range for the nominal bus voltage. Bus under-voltage shall be prevented by implementing an autonomous (temporarily) disconnection circuit for non-essential loads. All such current limiting and auto switch-off circuits shall be monitored by telemetry.
 
 In terms of \textbf{battery charge and discharge management}, the battery charger shall be able to ensure charging of batteries discharged down to zero volts. Also, the solar array power shall be enough to recharge the battery in any mission phase with all the essential loads connected or one worst case load connected (representing a failure), whichever is the more constraining.
 
@@ -371,11 +371,11 @@ The \textbf{power distribution and protection} has the task of routing the sourc
 
 \subsubsection{Electromagnetic Compatibility}
 
-The objective of electromagnetic compatibility (EMC) requirements is to ensure that the space system operates without performance degradation under self-induced and external electromagnetic environment. For cases where EMC is of concern during operation, ECSS-E-ST-20-07 \cite{} provides sufficient details.
+The objective of electromagnetic compatibility (EMC) requirements is to ensure that the space system operates without performance degradation under self-induced and external electromagnetic environment. For cases where EMC is of concern during operation, ECSS-E-ST-20-07 \cite{ECSS-E-ST-20-07} provides sufficient details.
 
 \subsubsection{Radio Frequency Systems}
 
-Radio frequency (RF) systems include transmitters, receivers, antennas and their  associated transmission lines (waveguides) including connectors. CubeSat RF system typically operate in the VHF band (30 to 300 MHz), UHF band (0.3 to 3 GHz) or S band (2 to 4 GHz). The transmitted or received signals can be narrowband or wideband, often with complex modulation. 
+Radio frequency (RF) systems include transmitters, receivers, antennas and their  associated transmission lines (waveguides) including connectors. CubeSat RF system typically operate in the VHF band (30 to 300 MHz), UHF band (0.3 to 3 GHz) or lower part of the SHF band (3 to 30 GHz), namely the S Band. The transmitted or received signals can be narrowband or wideband, often with complex modulation. 
 
 The RF engineering process takes into account:
 
@@ -387,9 +387,9 @@ The RF engineering process takes into account:
 \item Frequency plan
 \end{itemize}
 
-The RF design and development is concerned with transmitter power, receiver sensitivity, multipaction, spectral purity, VSWR, frequency stability, coupling between antennas, insulation, and EIRP.
+The RF design and development is concerned with transmitter power, receiver sensitivity, multipaction, spectral purity, VSWR, frequency stability, coupling between antennas, TX/RX isolation, insulation, and EIRP.
 
-\textbf{Antennas} are commonly in a stored configuration during launch, a deployment mechanism must be included, as discussed in Section \ref{ss:Mechanisms}. To avoid electrostatic discharge (ESD) all metallic parts of the radiating elements shall be connected to the equipment DC ground. The characteristics of antennas comprise coverage or beam shape, directivity, beam pointing, gain, input impedance mismatch factor, radiation patter, sense of polarization, side lobe level, noise temperature (for receive antennas), and variations of all those characteristics due to frequency, temperature, and ageing.
+\textbf{Antennas} are commonly in a stored configuration during launch, a deployment mechanism must be included, as discussed in Section \ref{ss:Mechanisms}. To avoid electrostatic discharge (ESD) all metallic parts of the radiating elements shall be connected to the equipment DC ground. The characteristics of antennas comprise coverage or beam shape, directivity, beam pointing, gain, input impedance mismatch factor, radiation patter, bandwidth, sense of polarization, side lobe level, and noise temperature.
 
 All RF equipment shall be able to stand the maximum specified \textbf{RF power} plus safety margin at maximum qualification temperature without degradation of components or radio signal. 
 
@@ -434,7 +434,7 @@ The structural engineer is also in charge of monitoring the mass and inertia pro
 \textit{ECSS-E-ST-33-01 "Mechanisms" \cite{ECSS-E-ST-33-01}}
 \end{tabular}
 
-Mechanisms in space are often potential mission critical single point failures, and therefore particular attention must be placed upon the reliability and redundancy of such. Mechanisms shall be interchangeable and maintainable during storage and ground life. For the unlikely case of using explosive devices, they shall be designed in accordance with ECSS-E-ST-33-11 \cite{ECSS-E-ST-33-11}. 
+Mechanisms in space are often mission critical elements (including deployable antennas and solar panels), and therefore particular attention must be placed upon the reliability and redundancy of such. Mechanisms shall be interchangeable and maintainable during storage and ground life. For the unlikely case of using explosive devices, they shall be designed in accordance with ECSS-E-ST-33-11 \cite{ECSS-E-ST-33-11}.
 
 \subsubsection{Propulsion}
 
@@ -442,7 +442,7 @@ Propulsion systems are currently in very early development stage for CubeSats an
 
 ECSS-E-ST-35 \cite{ECSS-E-ST-35} provides the general requirements for propulsion propulsion systems. Associated \textbf{cleanliness} requirements are provided in ECSS-E-ST-35-06 \cite{ECSS-E-ST-35-06}.
 
-Specific requirements for \textbf{liquid and electric propulsion} are provided in ECSS-E-ST-35-01 \cite{}. Further, ECSS-E-ST-35-10 \cite{} provides details on compatibility testing for liquid propulsion systems. 
+Specific requirements for \textbf{liquid and electric propulsion} are provided in ECSS-E-ST-35-01 \cite{ECSS-E-ST-35-01}. Further, ECSS-E-ST-35-10 \cite{ECSS-E-ST-35-10} provides details on compatibility testing for liquid propulsion systems. 
 
 Specific requirements for \textbf{solid propulsion} are provided in ECSS-E-ST-35-02 \cite{ECSS-E-ST-35-02}. 
 
@@ -454,7 +454,7 @@ Specific requirements for \textbf{solid propulsion} are provided in ECSS-E-ST-35
 
 The software engineering discipline addresses the life cycle processes for software products (e.g. requirements definition, architectural design, development, operations and maintenance). In particular it addresses the different types of software: onboard (embedded), on ground, and software for qualification, testing and verification. 
 
-Space software engineering is implemented in much the same way is space system engineering is. In fact, the term system as used in this section refers to the combination of hardware and software. When the software development is included in the overall CubeSat project, it will share the same project phases and reviews with it. An perhaps better alternative is to have the software development carried out as in individual project, with its on project phases and reviews. This is  a matter of choice. 
+Space software engineering is implemented in much the same way as space system engineering. In fact, the term system as used in this section refers to the combination of hardware and software. When the software development is included in the overall CubeSat project, it will share the same project phases and reviews with it. An perhaps better alternative is to have the software development carried out as in individual project, with its on project phases and reviews. This is  a matter of choice. 
 
 Either way, the following software project reviews are to be passed:
 
@@ -476,7 +476,7 @@ An important activity that runs in parallel to all the ones discussed in the fol
 
 The system requirements allocated to the software are derived from the analysis of the specific intended use of the system (that is, the combination of software-hardware), and from results of safety and dependability analysis. It also includes the requirements on observability, which is the capability of being able to monitor the software behavior and to facility system integration and failure investigation. These requirements together constitute the \textbf{software requirements baseline} (RB).
 
-When the requirements baseline has passed through the system requirement review, it is further elaborated into the \textbf{technical specification} (TS). the TS captures all requirements on lower level and cover therefore functional and performance specifications, operational, reliability, configuration, quality assurance, data definition, interface specification and so on.
+When the requirements baseline has passed through the system requirement review, it is further elaborated into the \textbf{technical specification} (TS). The TS captures all requirements on lower level and cover therefore functional and performance specifications, operational, reliability, configuration, quality assurance, data definition, interface specification and so on.
 
 The established technical specification is then transformed into a \textbf{software architecture}. The architecture describes the top-level structure of the software, identifies software components and their interrelation, and describes the static (packages, classes, units) and dynamic decomposition (threads, tasks, processes). Further, it shall described the software behavior.
 
@@ -554,7 +554,7 @@ In order to determine whether or not the design of the control system meets the 
 
 \begin{itemize}
 \item \textbf{Experimental results}: This is usually not possible (at least on system level) until a late stage of the development. And even then, it may not be feasible, due to difficulties in simulating the target environment.
-\item \textbf{Numerical simulations}: More practical than experimental results and therefore widely used. However, such simulations are often very time-consuming, for example Monte-Carlo simulations that comprises of a large number of simulations to cover many possible cases. Simulations are more useful for analyzing specific contributions to the total error rather than the total error for the entire system
+\item \textbf{Numerical simulations}: More practical than experimental results and therefore widely used. However, such simulations are often very time-consuming, for example Monte-Carlo simulations that comprises of a large number of simulations to cover many possible cases. Simulations are more useful for analyzing specific contributions to the total error rather than the total error for the entire system.
 \item \textbf{Compiled error budget}: This budget is used to estimate the total error given what is known about the individual contributing errors.
 \end{itemize}
 
@@ -588,7 +588,7 @@ Depending on the complexity and requirements of the specific CubeSat mission, at
 \textit{ECSS-E-ST-70 "Ground systems and operations" \cite{ECSS-E-ST-70}}
 \end{tabular}
 
-Large part of the previous sections were only concerned with spacecraft system engineering. The engineering of the ground system however is conducted in a very similar pattern. Namely, the same project phases and reviews can be applied, and the process typically covers requirements analysis, design, development, and verification. 
+Large parts of the previous sections were only concerned with spacecraft system engineering. The engineering of the ground system however is conducted in a very similar pattern. Namely, the same project phases and reviews can be applied, and the process typically covers requirements analysis, design, development, and verification. 
 
 An essential interface control document that governs the link between space and ground segment is the \textbf{space-to-ground interface control document} (SGICD, Section \ref{sec:Space-to-Ground Interface Control Document}). Another important aspect is logistics support that comprises the staffing of stations, the training, provision of spares and support equipment, and so on. Ground systems engineering is also tightly related to mission operations, which is presented in Chapter \ref{chap:Mission Operations}.
 
@@ -682,7 +682,7 @@ The ground communications system provides the interconnections between systems, 
 
 To manage ever more complex systems and their interdependencies, there is a general trend in various engineering domains to move from a \textbf{document-centric} to a \textbf{model-centric} system engineering approach. Both approaches can equally be applied to the system engineering life cycle activities that were presented in the previous sections. The key difference between the two approaches, however, are the nature of the primary artifacts that they produce. 
 
-With the \textbf{document-based} approach, systems engineers manually generate the documents related to system engineering, namely requirements specifications, interface definition documents, design definition documents, and so on. Document-based systems engineers produce these artifacts in the form of a disjoint set of text documents, spreadsheets, diagrams, and presentations (and configuration-manage them in a disjoint set of repositories). The problem is that the task of keeping all those documents in synch and up-to-date, is heavily time-consuming and error prone. Imagine for example just the profane activity of changing the name of an equipments unit; all documents making reference to it will have to be modified as well.
+With the \textbf{document-based} approach, systems engineers manually generate the documents related to system engineering, namely requirements specifications, interface definition documents, design definition documents, and so on. Document-based systems engineers produce these artifacts in the form of a disjoint set of text documents, spreadsheets, diagrams, and presentations (and configuration-manage them in a disjoint set of repositories). The problem is that the task of keeping all those documents in sync and up-to-date is very time-consuming and error prone. Imagine for example just the profane activity of changing the name of an equipments unit; all documents making reference to it will have to be modified as well.
 
 With the \textbf{model-based} system engineering (MBSE) approach, systems engineers perform the same life cycle activities and produce the same set of deliverables. But the deliverables are not the immediate outputs of the life cycle activities; they are not the primary artifacts. With the MBSE approach, the primary artifact of those activities is an integrated, coherent, and consistent system model, created by using a dedicated systems modeling tool. All other artifacts are secondary and automatically generated from the system model using that same modeling tool, which serves as the central repository for the design.
 
